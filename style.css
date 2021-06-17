@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 40px;
+}
+.logo{
+    width: 20%;
+}
+.try-it{
+    text-decoration: none;
+    color: hsl(322, 100%, 66%);
+    border: 2px solid;
+    padding: 20px 40px;
+    border-radius: 25px;
+}
+#sec-header{
+    padding-top: 60px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.big-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+}
+.paragraph{
+    color: hsl(192, 100%, 9%);
+    margin-bottom: 2em;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Open Sans';
+    margin-top: 2em;
+}
+.btn{
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(0, 0%, 100%);
+    padding: 1em 6em;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 5rem;
+}
+.btn:hover , .sub-btn:hover{
+    background-color: #FF8ED6;
+}
+.fa:hover{
+ color: #00CCFF;
+}
+#numbers-section{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#numbers-section div{
+    margin-bottom: 6em;
+    margin-top: 6em;
+}
+#numbers-section h1{
+    font-size: 5em;
+    margin: 0;
+}
+#numbers-section p{
+    margin: 0;
+}
+#numbers-section img{
+    margin-right:  10em;
+}
+.section{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15rem;
+}
+.button-container{
+    display: inline;
+}
+.another{
+    flex-direction: row-reverse;
+}
+.grow{
+    width: 40%;
+    position: relative;
+}
+
+.first{
+    background-color: #F6FBFF;
+}
+.sign-up{
+    text-align: center; 
+    margin: 10rem 0  10rem 0;
+}
+.sign-up h1{
+    margin-bottom: 2rem;
+}
+
+.side-img{
+    width: 50%;
+}
+
+.contact{
+    display: flex;
+}
+.contact p{
+    margin-left: 20px;
+}
+footer{
+    background-color: #01262F;   
+}
+.footer-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px;
+}
+.wave , .wave-two{
+    position: relative;
+}
+.wave-two img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.wave img{
+    position: absolute; 
+    width: 100%;
+    bottom: 0; 
+    left: 0; 
+}
+#main{
+    margin-bottom: 6rem;
+}
+.newsletter, .footer-contact{
+    width: 45%;
+    color: hsl(0, 0%, 100%)
+
+}
+.newsletter p, .footer-contact p{
+    font-size: 20px;
+}
+.icons{
+    display: flex; 
+    margin-top: 30px;
+}
+.icon{
+    margin-right: 30px;
+}
+.icon a{
+    color: white;
+}
+.sub-btn{
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(0, 0%, 100%);
+    padding:  15px 60px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 10px;
+
+}
+input{
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+input.error{
+ border: 3px solid red;
+}
+input.success{
+    border: 3px solid #1ef11e;
+}
+/* form small{
+    position:absolute;
+    bottom: -20px;
+    color:  hsl(0, 100%, 63%);
+    /* visibility: hidden; */
+
+/* form.error small{
+    visibility: hidden;
+}*/
+form.success input{
+    border: 2px solid #1ef11e;
+}
+form.error input{
+    border: 2px solid  hsl(0, 100%, 63%);
+} 
+@media screen and (max-width:768px) {
+    .try-it{
+        padding: 9px 12px;
+    }
+    #numbers-section{
+        display: block;
+        text-align: center;
+    }
+    .section{
+        display: block;
+    }
+    .grow{
+        width: 100%;
+        text-align: center;
+        margin-top: 5rem;
+    }
+    #sec-header{
+        width: 90%;
+        /* margin: 0 auto */
+
+    }
+    .sign-up{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 6rem;
+    }
+    .side-img{
+        width: 100%;
+    }
+    .footer-container{
+        display: block;
+    }
+    .newsletter, .footer-contact{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    input{
+        width: 100%;
+    }
+    .button-container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .paragraph{
+        margin-bottom: unset;
+    }
+    .btn{
+        margin-top: 3rem;
+    }
+}
