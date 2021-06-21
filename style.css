@@ -201,7 +201,17 @@ form.success input{
 form.error input{
     border: 2px solid  hsl(0, 100%, 63%);
 } 
+
 @media screen and (max-width:768px) {
+    .logo{
+        width: 40%
+    }
+    .big-text{
+        font-size: 28px;
+    }
+    .paragraph{
+        font-size: 1rem;
+    }
     .try-it{
         padding: 9px 12px;
     }
@@ -236,6 +246,10 @@ form.error input{
     .newsletter, .footer-contact{
         width: 100%;
         margin-bottom: 5rem;
+        margin-top: 5rem;
+    }
+    .newsletter p, .footer-contact p{
+        font-size: 14px;
     }
     input{
         width: 100%;
